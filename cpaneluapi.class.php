@@ -1,5 +1,5 @@
 <?php
-
+namespace n1ghteyes\cpanel;
 /**
  * PHP class to handle connections with cPanel's UAPI and API2 specifically through
  * cURL requests, using cPanel API Tokens, as seamlessly and simply as possible.
