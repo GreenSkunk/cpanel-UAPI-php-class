@@ -11,7 +11,7 @@
         {
             "name": "Jeremy Knab",
             "email": "jknab@greenskunk.com"
-        },
+        }
     ],
     "require": {
         "php": ">=5.6.0",
