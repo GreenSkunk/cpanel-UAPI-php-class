@@ -1,5 +1,5 @@
 Forked from [N1ghteyes/cpanel-UAPI-php-class](https://github.com/N1ghteyes/cpanel-UAPI-php-class)
-** Slight changes as password has been swapped with cPanel API Token **
+**Slight changes as password has been swapped with cPanel API Token**
 
 cPanel UAPI and API2 PHP class
 ===
