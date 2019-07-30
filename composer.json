@@ -1,0 +1,20 @@
+{
+    "name": "greenskunk/cpanel-api",
+    "description": "cPanel API via cPanel API Tokens",
+    "keywords": ["cPanel", "cPanel API"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toby New",
+            "email": "toby.new@source-control.co.uk"
+        },
+        {
+            "name": "Jeremy Knab",
+            "email": "jknab@greenskunk.com"
+        },
+    ],
+    "require": {
+        "php": ">=5.6.0",
+    },
+    "minimum-stability": "stable"
+}
