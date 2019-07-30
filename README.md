@@ -22,7 +22,7 @@ See the example files, but typical usage takes the form of:
 
 ### Instantiate the class
 ```php
-$cPanel = new cpanelAPI('user', 'password', 'cpanel.example.com');
+$cPanel = new cpanelAPI('user', 'cpanelApiToken', 'cpanel.example.com');
 ```
 The API we want to use and the Module (also called Scope) are now protected and are set by `__get()`.
 
@@ -53,7 +53,7 @@ $response = $cPanel->SSL->list_certs();
 #### File upload example
 
 ```php
-$cPanel = new cpanelAPI($username, $password, $hostname);
+$cPanel = new cpanelAPI($username, $cpanelApiToken, $hostname);
 $cPanel->uapi->post->Fileman
        ->upload_files(['dir' => REMOTE_PATH_RELATIVE_TO_HOME,
                        'file-1' => new CURLFile(LOCAL_PATH_TO_FILE)
@@ -65,7 +65,7 @@ $cPanel->uapi->post->Fileman
 API2 is used in exactly the same way as the UAPI
 
 ```php
-$cPanel = new cpanelAPI('user', 'password', 'cpanel.example.com');
+$cPanel = new cpanelAPI('user', 'cpanelApiToken', 'cpanel.example.com');
 ```
 
 For example, suppose we want to use the API2 to add a subdomain:
@@ -80,7 +80,7 @@ var_dump($response);
 To use this class on a cPanel instance with two-factor authentication (2FA), you need to pass the secret into the class constructor:
 
 ```php
-$cPanel = new cpanelAPI('user', 'password', 'cpanel.example.com', 'secret');
+$cPanel = new cpanelAPI('user', 'cpanelApiToken', 'cpanel.example.com', 'secret');
 ```
 
 The secret can be found on the 2FA setup page. See [Two-Factor Authentication for cPanel – Configure two-factor authentication](https://documentation.cpanel.net/display/ALD/Two-Factor+Authentication+for+cPanel#Two-FactorAuthenticationforcPanel-Configure2FA) for details.
